@@ -1,0 +1,27 @@
+<Main>
+	<Header/>
+	<Menu>
+		<MenuElements/>
+	</Menu>
+	<Content>
+		<Events/>
+		or
+		<News/>
+		or
+		<ReserveTable/>
+		or
+		<Sites>
+			<OverView>
+				<Site1/>
+				<Site2/>
+				<Site3/>
+				<Site4/>
+			</OverView>
+		</Sites>
+		or
+		<Gallery/>
+		or
+		<SomethingElse...>
+		</Content>
+		<Footer/>
+	</Main>
