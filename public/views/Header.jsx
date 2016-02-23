@@ -1,6 +1,10 @@
+import React from 'react';
 
 export default class Header extends React.Component {
 	render() {
-		return false
+		return(
+			<div id = "header">
+			</div>	
+		)
 	}
 }
