@@ -1,0 +1,29 @@
+{
+  "name": "hippodrom",
+  "version": "1.0.0",
+  "description": "hippodrom main site",
+  "main": "public/views/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feijihn/hippodrom.git"
+  },
+  "keywords": [
+    "hippodrom"
+  ],
+  "author": "KDK",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/feijihn/hippodrom/issues"
+  },
+  "homepage": "https://github.com/feijihn/hippodrom#readme",
+  "dependencies": {
+    "material-ui": "^0.14.4",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-tap-event-plugin": "^0.2.2",
+    "webpack": "^1.12.14"
+  }
+}
