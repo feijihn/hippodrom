@@ -12,7 +12,7 @@ var styles = {
 		borderRight: '1px solid rgba(255,255,255,0.3)'
 	},
 	MenuInkBarStyle: {
-		position: 'relative',
+		position: 'fixed',
 		top: 142,
 		backgroundColor: 'rgba(255,255,255,1)', 
 		color:'rgba(255, 255, 255, 0)'
