@@ -7,7 +7,7 @@ import styles from '../styles/InlineStyles.js';
 export default class MenuBar extends React.Component {
 	render() {
 		return(
-			<Tabs tabItemContainerStyle={styles.MenuStyle} inkBarStyle={styles.MenuInkBarStyle}>
+			<Tabs tabItemContainerStyle={styles.MenuStyle} inkBarStyle={styles.MenuInkBarStyle} className={'menubar'}>
 				<Tab style={styles.MenuElementStyle} label="Главная" >
 				</Tab>
 				<Tab style={styles.MenuElementStyle} label="Новости" >
