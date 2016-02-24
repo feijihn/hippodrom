@@ -15,7 +15,6 @@ export default class Main extends React.Component {
 		<div>
 			<Header />
 			<MenuBar />
-			<Content />
 			<Footer />
 		</div>
 		);

@@ -15,9 +15,9 @@ body {
 
 #header {
   width: 100vw;
-	border-bottom: 2px ridge rgba(255,255,255,0.5);
+	border-bottom: 2px ridge rgba(0,0,0,0.5);
 	height: 96px;
-	background-color: rgba(255,255,255,0.2);
+	background-color: rgba(0,0,0,0.275);
 	text-align: center;
 }
 
@@ -30,10 +30,13 @@ body {
 
 #contentWrapper {
 	position: absolute;
-	width:100%;
-	height: calc(100% - 148px);
-	top: 146px;
-	overflow: hidden;
+	width: 80%;
+	height: calc(100vh - 146px);
+	margin-right: 10%;
+	margin-left: 10%;
+	background-color: rgba(0,0,0,0.7);
+	border-left: 2px solid rgba(255,255,255,0.3);
+	border-right:  2px solid rgba(255,255,255,0.3);
 }
 
 #leftPanel {
