@@ -2,10 +2,11 @@ import Colors from 'material-ui/lib/styles/colors'
 
 var styles = {
 	MenuStyle: {
-		color: 'rgba(255,255,255,0)'
+		backgroundColor: 'rgba(255, 255, 255, 0.225)',
+		height: 48
 	},
 	MenuElementStyle: {
-		backgroundColor: Colors.grey800,
+		backgroundColor: 'rbga(255, 255, 255, 0)',
 		transform: 'none'
 	},
 	MenuInkBarStyle: {
