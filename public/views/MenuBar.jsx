@@ -4,17 +4,17 @@ import Tab from 'material-ui/lib/tabs/tab';
 import Slider from 'material-ui/lib/slider';
 import styles from '../styles/InlineStyles.js';
 import Contacts from './Contacts.jsx';
-import News from './Contacts.jsx';
+import News from './News.jsx';
 import Content from './Content.jsx';
 
 export default class MenuBar extends React.Component {
 	render() {
 		return(
-			<Tabs tabItemContainerStyle={styles.MenuStyle} inkBarStyle={styles.MenuInkBarStyle} className={'menubar'} contentContainerStyle={styles.TabStyle}>
+			<Tabs tabItemContainerStyle={styles.MenuStyle} inkBarStyle={styles.MenuInkBarStyle} className={'menubar'} contentContainerStyle={styles.ContentStyle}>
 				<Tab style={styles.MenuElementStyle} label="Главная" >
 				</Tab>
 				<Tab style={styles.MenuElementStyle} label="Новости" >
-					<div id="contentWrapper">hello</div>
+						<News />	
 				</Tab>
 				<Tab style={styles.MenuElementStyle} label="Места" >
 				</Tab>
