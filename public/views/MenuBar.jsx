@@ -1,7 +1,8 @@
 import React from 'react';
 import Tabs from 'material-ui/lib/tabs/tabs';
 import Tab from 'material-ui/lib/tabs/tab';
-import styles from '../styles/InlineStyles.js';
+import Paper from 'material-ui/lib/paper';
+import Styles from '../styles/InlineStyles.js';
 
 export default class MenuBar extends React.Component {
 	constructor(props)	{
@@ -20,24 +21,21 @@ export default class MenuBar extends React.Component {
 
 	render() {
 		return(
-			<Tabs 
-				tabItemContainerStyle={styles.MenuStyle} 
-				inkBarStyle={styles.MenuInkBarStyle} 
-				onChange={this.handleChange}
-				value={this.state.value}
-				contentContainerStyle={styles.ContentStyle}
-			>
-				<Tab style={styles.MenuElementStyle} label="Главная" value={'Home'}>
-				</Tab>
-				<Tab style={styles.MenuElementStyle} label="Новости" value={'News'}>
-				</Tab>
-				<Tab style={styles.MenuElementStyle} label="Места" value={'Places'}>
-				</Tab>
-				<Tab style={styles.MenuElementStyle} label="Галерея" value={'Gallery'}>
-				</Tab>
-				<Tab style={styles.MenuElementStyle} label="Контакты" value={'Contacts'}>
-				</Tab>
-			</Tabs>
-    	);
+			<Paper style={Styles.MenuWrapper} zDepth={2} rounded={false}>
+      <Tabs
+      	tabItemContainerStyle={Styles.MenuStyle}
+        value={this.state.value}
+        onChange={this.handleChange}
+				inkBarStyle={Styles.MenuInkBarStyle}
+      >
+        <Tab style={Styles.MenuElementStyle} label="События" value="Home" ></Tab>
+        <Tab style={Styles.MenuElementStyle} label="Новости" value="News"></Tab>
+        <Tab style={Styles.MenuElementStyle} label="Календарь" value="Calendar" ></Tab>
+        <Tab style={Styles.MenuElementStyle} label="Места" value="Places" ></Tab>
+        <Tab style={Styles.MenuElementStyle} label="Медиа" value="Gallery" ></Tab>
+        <Tab style={Styles.MenuElementStyle} label="Контакты" value="Contacts" ></Tab>
+      </Tabs>
+			</Paper>  
+		);
 	}
 }

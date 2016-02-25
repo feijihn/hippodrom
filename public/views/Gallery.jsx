@@ -8,8 +8,7 @@ export default class Gallery extends React.Component {
 			//return <NewsElement data={el.data} key={Date.now()} />
 		//});
 		return (
-				<div id="contentWrapper">
-				</div>
+			<p>Gallery</p>
 		);
 	}
 }

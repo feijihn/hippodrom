@@ -14,12 +14,13 @@ import Tab from 'material-ui/lib/tabs/tab';
 
 import RaisedButton from 'material-ui/lib/raised-button';
 
+injectTapEventPlugin();
 
 export default class Main extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: 'a',
+      value: 'Home',
     };
   };
 
@@ -31,28 +32,9 @@ export default class Main extends React.Component {
 	render() {
 		return (
 			<div style={Styles.backgroundStyle}>  
-			<AppBar 
-			style={Styles.appBarStyle}
-			showMenuIconButton={false}> 
-			<RaisedButton style={Styles.logoStyle}><h2 id="logo">#ИППОДРОМ</h2></RaisedButton>
-
-			</AppBar>
-			<Paper style={Styles.contentWrapper} zDepth={2} rounded={false}>
-
-      <Tabs
-      	tabItemContainerStyle={Styles.buttonsStyle}
-        value={this.state.value}
-        onChange={this.handleChange}
-      >
-        <Tab label="События" value="a" style={{height: 75}}></Tab>
-        <Tab label="Новости" value="a"></Tab>
-        <Tab label="Календарь" value="a" ></Tab>
-        <Tab label="Места" value="a" ></Tab>
-        <Tab label="Медиа" value="a" ></Tab>
-        <Tab label="Контакты" value="a" ></Tab>
-      </Tabs>
-
-			</Paper>
+			<Header />
+			<MenuBar updateContent={this.handleChange} defaultValue={'Home'}/>
+			<Content value={this.state.value}/>
 			</div>
 		)
 	}

@@ -2,15 +2,13 @@ import Colors from 'material-ui/lib/styles/colors'
 
 var styles = {
 	MenuStyle: {
-		backgroundColor: Colors.grey700
+		backgroundColor: Colors.deepOrange400
 	},
 	MenuElementStyle: {
-		backgroundColor: 'rbga(0, 0, 0, 0)',
-		transform: 'none',
-		borderRight: '1px solid rgba(255,255,255,0.3)'
+		height: '10vh',
 	},
 	MenuInkBarStyle: {
-		backgroundColor: 'rgba(255,255,255,1)', 
+		backgroundColor: Colors.lime900, 
 		color:'rgba(255, 255, 255, 0)'
 	},
   ContentStyle: {
@@ -27,16 +25,22 @@ var styles = {
 	  position: 'absolute',
 	  zIndex: -2
 	},
-	contentWrapper: {
+	ContentWrapper: {
 		width: '70%',
-		height: 600,
+		height: 'auto',
 		position: 'absolute',
-		top: 75,
+		top: '23vh',
 		left: '15%',
 		backgroundColor: 'white'
 	},
+	MenuWrapper: {
+		width:'70%',
+		position: 'absolute',
+		top: '13vh',
+		left: '15%'
+	},
 	appBarStyle: {
-	  height: 150,
+	  height: '23vh',
 	  width: '100%',
 	  textAlign: 'center',
 	  backgroundColor: Colors.orange300,
