@@ -6,27 +6,27 @@ import Events from './Events.jsx';
 var data = {
 	EventsData: [
 		{
-			img: 'http://data.whicdn.com/images/77592858/large.jpg',
+			img: '../images/thumb-1600x1200.png',
 			title: 'One',
 			text: 'one',
 		},
 		{
-			img: 'http://data.whicdn.com/images/77592858/large.jpg',
+			img: '../images/thumb-1600x1200.png',	
 			title: 'Two',
 			text: 'two',
 		},
 		{
-			img: 'http://data.whicdn.com/images/77592858/large.jpg',
+			img: '../images/thumb-1600x1200.png',
 			title: 'Three',
 			text: 'three',
 		},
 		{
-			img: 'http://data.whicdn.com/images/77592858/large.jpg',
+			img: '../images/thumb-1600x1200.png',
 			title: 'Four',
 			text: 'four',
 		},
 		{
-			img: 'http://data.whicdn.com/images/77592858/large.jpg',
+			img: '../images/thumb-1600x1200.png',
 			title: 'Five',
 			text: 'five',
 		}

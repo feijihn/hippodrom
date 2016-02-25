@@ -1,6 +1,9 @@
-body {
+* {
 	padding: 0;
 	margin: 0;
+}
+
+body {
 	height: 100%;
 	width: 100%;
 	background-image: url('../images/devbg.jpg');
@@ -52,12 +55,12 @@ body {
 
 .newsElement p {
 	color: white;
-	word-wrap:  break-word;
+	word-wrap: break-word;
 }
 
 .newsElement h {
 	background-color: rgba(0,0,0,0.7);
-  width: 100%;
+  	width: 100%;
 	font-size: 1.5em;
 	font-weight: 450;
 	color: white;
@@ -65,5 +68,15 @@ body {
 	margin-left: auto;
 }
 
+.sliderFooter {
+	width: 100%;
+	background-color: rgba(0,0,0,0.4);
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+}
 
-
+.dotClass {
+	background-color: white;
+	color:white;
+}

@@ -28493,23 +28493,23 @@
 
 	var data = {
 		EventsData: [{
-			img: 'http://data.whicdn.com/images/77592858/large.jpg',
+			img: '../images/thumb-1600x1200.png',
 			title: 'One',
 			text: 'one'
 		}, {
-			img: 'http://data.whicdn.com/images/77592858/large.jpg',
+			img: '../images/thumb-1600x1200.png',
 			title: 'Two',
 			text: 'two'
 		}, {
-			img: 'http://data.whicdn.com/images/77592858/large.jpg',
+			img: '../images/thumb-1600x1200.png',
 			title: 'Three',
 			text: 'three'
 		}, {
-			img: 'http://data.whicdn.com/images/77592858/large.jpg',
+			img: '../images/thumb-1600x1200.png',
 			title: 'Four',
 			text: 'four'
 		}, {
-			img: 'http://data.whicdn.com/images/77592858/large.jpg',
+			img: '../images/thumb-1600x1200.png',
 			title: 'Five',
 			text: 'five'
 		}]
@@ -28564,6 +28564,10 @@
 
 	var _reactSlick2 = _interopRequireDefault(_reactSlick);
 
+	var _InlineStyles = __webpack_require__(238);
+
+	var _InlineStyles2 = _interopRequireDefault(_InlineStyles);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -28587,17 +28591,26 @@
 	      var slideElements = this.props.data.EventsData.map(function (slide, id) {
 	        return _react2.default.createElement(
 	          'div',
-	          null,
-	          _react2.default.createElement('img', { src: slide.img }),
+	          { style: {
+	              backgroundColor: 'white', //in case if image isn't loaded
+	              backgroundImage: 'url(' + slide.img + ')',
+	              height: '500px',
+	              backgroundSize: 'cover',
+	              backgroundRepeat: 'no-repeat'
+	            } },
 	          _react2.default.createElement(
-	            'h3',
-	            { style: { color: 'white' } },
-	            slide.title
-	          ),
-	          _react2.default.createElement(
-	            'p',
-	            { style: { color: 'white' } },
-	            slide.text
+	            'div',
+	            { className: 'sliderFooter' },
+	            _react2.default.createElement(
+	              'h2',
+	              null,
+	              slide.title
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              slide.text
+	            )
 	          )
 	        );
 	      });

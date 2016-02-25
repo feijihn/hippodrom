@@ -1,15 +1,23 @@
 import React from 'react';
 import Content from './Content.jsx';
 import Slider from 'react-slick';
+import styles from '../styles/InlineStyles.js';
 
 export default class Events extends React.Component {
   render() {
     var slideElements = this.props.data.EventsData.map(function(slide, id) {
       return (
-        <div>
-          <img src={slide.img} />
-          <h3 style={{color: 'white'}}>{slide.title}</h3>
-          <p  style={{color: 'white'}}>{slide.text}</p>
+        <div style={{
+          backgroundColor: 'white', //in case if image isn't loaded
+          backgroundImage: 'url(' + slide.img + ')',
+          height: '500px',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+        }}>
+          <div className="sliderFooter">
+            <h2>{slide.title}</h2>
+            <p>{slide.text}</p>
+          </div>
         </div>
       );
     });
