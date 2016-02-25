@@ -9,12 +9,25 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 injectTapEventPlugin();
 
 export default class Main extends React.Component {
-	
+	constructor(props) {
+		super(props);
+		this.state = {
+		content: 'Home',
+		};
+	}
+
+	tabChanged = (value) =>  {
+		this.setState({
+			content: value,
+		});
+	};
+
 	render() {
 		return (
 		<div>
 			<Header />
-			<MenuBar />
+			<MenuBar updateContent={this.tabChanged} defaultValue={'Home'} />
+			<Content value={this.state.content} />
 			<Footer />
 		</div>
 		);
