@@ -19,7 +19,37 @@ var styles = {
 		width: '80%',
 		marginRight: '10%',
 		marginLeft: '10%'
-	}
+	},
+	backgroundStyle: {
+	  height: '100%',
+	  width: '100%',
+	  backgroundColor: Colors.amber100,
+	  position: 'absolute',
+	  zIndex: -2
+	},
+	contentWrapper: {
+		width: '70%',
+		height: 600,
+		position: 'absolute',
+		top: 75,
+		left: '15%',
+		backgroundColor: 'white'
+	},
+	appBarStyle: {
+	  height: 150,
+	  width: '100%',
+	  textAlign: 'center',
+	  backgroundColor: Colors.orange300,
+	  zIndex: -1
+	},
+	logoStyle: {
+		margin: 6,
+		marginTop: 20, 
+		padding: 2, 
+	},
+	buttonsStyle: {
+    backgroundColor: Colors.deepOrange400,
+  },
 }
 
 
