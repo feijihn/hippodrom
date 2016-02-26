@@ -7,7 +7,7 @@ function squarify(element) {
 
 var styles = {
 	MenuStyle: {
-		backgroundColor: Colors.blueGrey500,
+		backgroundColor: Colors.brown500,
 	},
 	MenuElementStyle: {
 		height: '9vh',
@@ -60,7 +60,7 @@ var styles = {
 		padding: 2,
 	},
 	buttonsStyle: {
-		backgroundColor: Colors.blueGrey500,
+		backgroundColor: Colors.brown500,
 	},
 	//newsBlockStyle: {
 		
@@ -77,7 +77,7 @@ var styles = {
 		height: 36,
 	},
 	buttonsStyle: {
-    backgroundColor: Colors.blueGrey500,
+    backgroundColor: Colors.brown500,
   },
   placesStyle: {
 	  width: '50%',
@@ -87,13 +87,13 @@ var styles = {
 	  display: 'inline-block',
   },
   titleStyle: {
-  	backgroundColor: Colors.blueGrey500,
+  	backgroundColor: Colors.brown500,
      display: 'inline-block',
      padding: '10px',
      opacity: 0.7
   },
   orderButton: {
-  	top: '40%',
+  	top: '30%',
   	opacity: 0.8,
   	position: 'fixed'
   },
