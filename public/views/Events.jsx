@@ -1,7 +1,7 @@
 import React from 'react';
 import Content from './Content.jsx';
 import Slider from 'react-slick';
-import styles from '../styles/InlineStyles.js';
+import Styles from '../styles/InlineStyles.js';
 
 export default class Events extends React.Component {
   render() {
@@ -14,8 +14,8 @@ export default class Events extends React.Component {
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
         }}>
-          <div className="sliderFooter">
-            <h2>{slide.title}</h2>
+          <div style={Styles.sliderFooter}>
+            <h2 style={{marginBottom: 5}}>{slide.title}</h2>
             <p>{slide.text}</p>
           </div>
         </div>
@@ -26,12 +26,15 @@ export default class Events extends React.Component {
       infinite: true,
       speed: 500,
       slidesToShow: 1,
-			slidesToScroll: 1,
-			autoplay: true,
-			dotClass: "dotClass",
-			fade: true,
-		};
-		return (
+      slidesToScroll: 1,
+      autoplay: true,
+      dotClass: "dotClass",
+      fade: true,
+      autoplaySpeed: 6000
+
+    };
+    return (
+    	<div id="contentWrapper">
 	      <Slider {...settings}>
           {slideElements}
     	  </Slider>
