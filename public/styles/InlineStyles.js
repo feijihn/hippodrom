@@ -7,13 +7,13 @@ function squarify(element) {
 
 var styles = {
 	MenuStyle: {
-		backgroundColor: Colors.lightBlue50
+		backgroundColor: Colors.blueGrey500,
 	},
 	MenuElementStyle: {
 		height: '9vh',
 	},
 	MenuInkBarStyle: {
-		backgroundColor: Colors.red201,
+		backgroundColor: Colors.brown900,
 		color:'rgba(255, 255, 255, 0)'
 	},
 	ContentStyle: {
@@ -27,7 +27,7 @@ var styles = {
 	backgroundStyle: {
 		height: '100%',
 		width: '100%',
-		backgroundColor: Colors.orange50,
+		backgroundColor: Colors.lightBlue50,
 		position: 'absolute',
 		backgroundRepeat: '',
 		zIndex: -2
@@ -39,7 +39,7 @@ var styles = {
 		position: 'absolute',
 		top: '20vh',
 		left: '15%',
-		backgroundColor: Colors.lime100
+		backgroundColor: Colors.brown100
 	},
 	MenuWrapper: {
 		width:'70%',
@@ -48,10 +48,10 @@ var styles = {
 		left: '15%'
 	},
 	appBarStyle: {
-		height: '23vh',
+		height: '20vh',
 		width: '100%',
 		textAlign: 'center',
-		backgroundColor: Colors.grey50,
+		backgroundColor: Colors.brown200,
 		zIndex: -1
 	},
 	logoStyle: {
@@ -60,7 +60,7 @@ var styles = {
 		padding: 2,
 	},
 	buttonsStyle: {
-		backgroundColor: Colors.deepOrange400,
+		backgroundColor: Colors.blueGrey500,
 	},
 	//newsBlockStyle: {
 		
@@ -77,7 +77,7 @@ var styles = {
 		height: 36,
 	},
 	buttonsStyle: {
-    backgroundColor: Colors.deepOrange400,
+    backgroundColor: Colors.blueGrey500,
   },
   placesStyle: {
 	  width: '50%',
@@ -87,7 +87,7 @@ var styles = {
 	  display: 'inline-block',
   },
   titleStyle: {
-  	backgroundColor: Colors.orange300,
+  	backgroundColor: Colors.blueGrey500,
      display: 'inline-block',
      padding: '10px',
      opacity: 0.7

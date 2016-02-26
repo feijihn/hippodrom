@@ -38,6 +38,7 @@ export default class Events extends React.Component {
 	      <Slider {...settings}>
           {slideElements}
     	  </Slider>
+      </div>
     );
   }
 }
