@@ -13,17 +13,17 @@ export default class Places extends React.Component {
 		//});
 		return (
 				<div id="contentWrapper">
-					<Paper style={Styles.placesStyle} zDepth={3} rounded={false}>
-						<h3>Бар</h3>
+					<Paper style={Styles.placesStyle} id="placeOne" zDepth={3} rounded={false}>
+						<div style={Styles.titleStyle}><h3>Бар</h3></div>
 					</Paper>
-					<Paper style={Styles.placesStyle} zDepth={3} rounded={false}>
-						<h3 style={Styles.titleStyle}>Зал</h3>
+					<Paper style={Styles.placesStyle} id="placeTwo" zDepth={3} rounded={false}>
+						<div style={Styles.titleStyle}><h3>Зал</h3></div>
 					</Paper>
-					<Paper style={Styles.placesStyle} zDepth={3} rounded={false}>
-						<h3 style={Styles.titleStyle}>Ресторан</h3>
+					<Paper style={Styles.placesStyle} id="placeThree" zDepth={3} rounded={false}>
+						<div style={Styles.titleStyle}><h3>Ресторан</h3></div>
 					</Paper>
-					<Paper style={Styles.placesStyle} zDepth={3} rounded={false}>
-						<h3 style={Styles.titleStyle}>Студия</h3>
+					<Paper style={Styles.placesStyle} id="placeFour" zDepth={3} rounded={false}>
+						<div style={Styles.titleStyle}><h3>Студия</h3></div>
 					</Paper>
 				</div>
 		);

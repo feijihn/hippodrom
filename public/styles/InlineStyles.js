@@ -61,11 +61,14 @@ var styles = {
   placesStyle: {
 	  width: '50%',
 	  height: 296,
+	  padding: '125px',
 	  textAlign: 'center',
 	  display: 'inline-block',
   },
   titleStyle: {
-  	textAlign: 'center',
+  	backgroundColor: Colors.orange300,
+     display: 'inline-block',
+     padding: '10px'
   },
   orderButton: {
   	top: '40%',
@@ -76,6 +79,15 @@ var styles = {
     margin: 6,
     marginTop: 2,
 	opacity: 0.5
+  },
+  sliderFooter: {
+  	width: '100%',
+  	height: 70,
+  	position: 'absolute',
+  	bottom: 0,
+  	backgroundColor: 'rgba(0,0,0,0.6)',
+  	color: 'white',
+  	padding: 20
   }
 }
 
