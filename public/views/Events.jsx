@@ -10,7 +10,7 @@ export default class Events extends React.Component {
         <div style={{
           backgroundColor: 'white', //in case if image isn't loaded
           backgroundImage: 'url(' + slide.img + ')',
-          height: '500px',
+					height: '500px',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
         }}>
@@ -22,22 +22,19 @@ export default class Events extends React.Component {
       );
     });
     var settings = {
-      dots: true,
+      dots: false,
       infinite: true,
       speed: 500,
       slidesToShow: 1,
-      slidesToScroll: 1,
-      autoplay: true,
-      dotClass: "dotClass",
-      fade: true,
-
-    };
-    return (
-    	<div id="contentWrapper">
+			slidesToScroll: 1,
+			autoplay: true,
+			dotClass: "dotClass",
+			fade: true,
+		};
+		return (
 	      <Slider {...settings}>
           {slideElements}
     	  </Slider>
-		</div>
     );
   }
 }
