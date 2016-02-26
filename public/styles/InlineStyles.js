@@ -85,12 +85,13 @@ var styles = {
 	  padding: '125px',
 	  textAlign: 'center',
 	  display: 'inline-block',
+	  backgroundImage: 'url(../images/thumbone.jpg)',
   },
   titleStyle: {
   	backgroundColor: Colors.brown500,
      display: 'inline-block',
      padding: '10px',
-     opacity: 0.7
+     opacity: 0.9
   },
   orderButton: {
   	top: '30%',
