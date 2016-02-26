@@ -27,18 +27,18 @@ var styles = {
 		width: '70%',
 		height: 'auto',
 		position: 'absolute',
-		top: '21vh',
+		top: '20vh',
 		left: '15%',
 		backgroundColor: 'white'
 	},
 	MenuWrapper: {
 		width:'70%',
 		position: 'absolute',
-		top: '12vh',
+		top: '11vh',
 		left: '15%'
 	},
 	appBarStyle: {
-	  height: '21vh',
+	  height: '20vh',
 	  width: '100%',
 	  textAlign: 'center',
 	  backgroundColor: Colors.orange300,
@@ -46,13 +46,13 @@ var styles = {
 	},
 	logoStyle: {
 		margin: 6,
-		marginTop: 20, 
+		marginTop: 12, 
 		padding: 2, 
 		height: 36
 	},
 	iconsDivStyle: {
 		margin: 6,
-		marginTop: 20,  
+		marginTop: 12,  
 		height: 36,
 	},
 	buttonsStyle: {
@@ -68,7 +68,8 @@ var styles = {
   titleStyle: {
   	backgroundColor: Colors.orange300,
      display: 'inline-block',
-     padding: '10px'
+     padding: '10px',
+     opacity: 0.7
   },
   orderButton: {
   	top: '40%',
@@ -81,11 +82,11 @@ var styles = {
 	opacity: 0.5
   },
   sliderFooter: {
-  	width: '100%',
+  	width: '67vw',
   	height: 70,
   	position: 'absolute',
   	bottom: 0,
-  	backgroundColor: 'rgba(0,0,0,0.6)',
+  	backgroundColor: 'rgba(0,0,0,0.7)',
   	color: 'white',
   	padding: 20
   }
