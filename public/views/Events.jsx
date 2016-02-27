@@ -10,7 +10,7 @@ export default class Events extends React.Component {
         <div style={{
           backgroundColor: 'white', //in case if image isn't loaded
           backgroundImage: 'url(' + slide.img + ')',
-					height: '500px',
+					height: '75vh',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
         }}>
@@ -34,7 +34,6 @@ export default class Events extends React.Component {
 
     };
     return (
-    	<div id="contentWrapper">
 	      <Slider {...settings}>
           {slideElements}
     	  </Slider>

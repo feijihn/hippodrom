@@ -10,7 +10,8 @@ var styles = {
 		backgroundColor: Colors.lightBlue50
 	},
 	MenuElementStyle: {
-		height: '9vh',
+		height: '10vh',
+		color: 'black',
 	},
 	MenuInkBarStyle: {
 		backgroundColor: Colors.red201,
@@ -35,16 +36,16 @@ var styles = {
 
 	ContentWrapper: {
 		width: '70%',
-		height: 'auto',
+		height: '69vh',
 		position: 'absolute',
-		top: '20vh',
+		top: '23vh',
 		left: '15%',
 		backgroundColor: Colors.lime100
 	},
 	MenuWrapper: {
 		width:'70%',
 		position: 'absolute',
-		top: '11vh',
+		top: '13vh',
 		left: '15%'
 	},
 	appBarStyle: {
@@ -110,7 +111,30 @@ var styles = {
   	backgroundColor: 'rgba(0,0,0,0.7)',
   	color: 'white',
   	padding: 20
-  }
+  },
+	FooterStyle: {
+		width: '100%' ,
+		height: '8vh' ,
+		backgroundColor: Colors.grey50,
+		borderTop: '1px solid',
+		position: 'absolute',
+		bottom: 0,
+		opacity: 0.5,
+		zIndex: -2,
+	},
+	ContactsInfoWrapper: {
+		width: '45%',
+		backgroundColor: Colors.black,
+		height: 'auto',
+		position: 'absolute',
+		zIndex: 9,
+		marginLeft: '65%',
+		paddingLeft: '5px'
+	},
+	ContactsInfo: {
+		color: Colors.white,
+		fontWeight: 200	
+	}
 }
 
 
