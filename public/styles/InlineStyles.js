@@ -38,14 +38,14 @@ var styles = {
 		width: '70%',
 		height: '69vh',
 		position: 'absolute',
-		top: '23vh',
+		top: '20vh',
 		left: '15%',
 		backgroundColor: Colors.brown100
 	},
 	MenuWrapper: {
 		width:'70%',
 		position: 'absolute',
-		top: '13vh',
+		top: '10vh',
 		left: '15%'
 	},
 	appBarStyle: {
