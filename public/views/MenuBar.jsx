@@ -21,19 +21,19 @@ export default class MenuBar extends React.Component {
 
 	render() {
 		return(
-			<Paper style={Styles.MenuWrapper} zDepth={2} rounded={false}>
+			<Paper style={Styles.Header.menuWrapper} zDepth={2} rounded={false}>
       <Tabs
-      	tabItemContainerStyle={Styles.MenuStyle}
+      	tabItemContainerStyle={Styles.Header.menuStyle}
         value={this.state.value}
         onChange={this.handleChange}
-				inkBarStyle={Styles.MenuInkBarStyle}
+				inkBarStyle={Styles.Header.menuInkBarStyle}
       >
-        <Tab style={Styles.MenuElementStyle} label="События" value="Home" ></Tab>
-        <Tab style={Styles.MenuElementStyle} label="Новости" value="News"></Tab>
-        <Tab style={Styles.MenuElementStyle} label="Календарь" value="Calendar" ></Tab>
-        <Tab style={Styles.MenuElementStyle} label="Места" value="Places" ></Tab>
-        <Tab style={Styles.MenuElementStyle} label="Медиа" value="Gallery" ></Tab>
-        <Tab style={Styles.MenuElementStyle} label="Контакты" value="Contacts" ></Tab>
+        <Tab style={Styles.Header.menuElementStyle} label="События" value="Home" ></Tab>
+        <Tab style={Styles.Header.menuElementStyle} label="Новости" value="News"></Tab>
+        <Tab style={Styles.Header.menuElementStyle} label="Календарь" value="Calendar" ></Tab>
+				<Tab style={Styles.Header.menuElementStyle} label="Места" value="Places" ></Tab>
+        <Tab style={Styles.Header.menuElementStyle} label="Медиа" value="Gallery" ></Tab>
+        <Tab style={Styles.Header.menuElementStyle} label="Контакты" value="Contacts" ></Tab>
       </Tabs>
 			</Paper>  
 		);

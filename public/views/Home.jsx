@@ -36,7 +36,7 @@ export default class Home extends React.Component {
 				<div id="contentWrapper">
 					<Events data={data}/>
 				</div>
-				</Paper>
+			</Paper>
 		);
 	}
 }

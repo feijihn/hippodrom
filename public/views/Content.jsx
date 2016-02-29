@@ -13,42 +13,42 @@ export default class Content extends React.Component {
 		switch(this.props.value){
 			case 'Home':
 				return (
-					<Paper style={Styles.ContentWrapper}>
+					<Paper style={Styles.Body.contentWrapper}>
 					<Home />
 					</Paper>
 				);
 				break;
 			case 'News':
 				return (
-					<Paper style={Styles.ContentWrapper}>
+					<Paper style={Styles.Body.contentWrapper}>
 					<News />
 					</Paper>
 				);
 				break;
 			case 'Calendar':
 				return(
-					<Paper style={Styles.ContentWrapper}>
+					<Paper style={Styles.Body.contentWrapper}>
 					<Calendar />
 					</Paper>
 				);
 				break;
 			case 'Places':
 				return (
-					<Paper style={Styles.ContentWrapper}>
+					<Paper style={Styles.Body.contentWrapper}>
 					<Places />
 					</Paper>
 				);
 				break;
 			case 'Gallery':
 				return (
-					<Paper style={Styles.ContentWrapper}>
+					<Paper style={Styles.Body.contentWrapper}>
 					<Gallery />
 					</Paper>
 				);
 				break;
 			case 'Contacts':
 				return (
-					<Paper style={Styles.ContentWrapper}>
+					<Paper style={Styles.Body.contentWrapper}>
 					<Contacts />
 					</Paper>
 				);

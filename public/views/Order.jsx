@@ -39,7 +39,7 @@ export default class Order extends React.Component {
     ];
 		return (
 			<div>
-			<RaisedButton label="Заказ стола" backgroundColor={Colors.brown400} style={Styles.orderButton} onTouchTap={this.handleOpen} secondary={true} />
+			<RaisedButton label="Заказ стола" backgroundColor={Colors.brown400} style={Styles.Order.orderButton} onTouchTap={this.handleOpen} secondary={true} />
 			<Dialog
           title="Заказ стола"
           actions={actions}

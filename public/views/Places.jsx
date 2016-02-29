@@ -13,17 +13,17 @@ export default class Places extends React.Component {
 		//});
 		return (
 				<div id="contentWrapper">
-					<Paper style={Styles.placesStyle} id="placeOne" zDepth={3} rounded={false}>
-						<div style={Styles.titleStyle}><h3>Бар</h3></div>
+					<Paper style={Styles.Places.placesStyle} id="placeOne" zDepth={3} rounded={false}>
+						<div style={Styles.Places.titleStyle}><h3>Бар</h3></div>
 					</Paper>
-					<Paper style={Styles.placesStyle} id="placeTwo" zDepth={3} rounded={false}>
-						<div style={Styles.titleStyle}><h3>Зал</h3></div>
+					<Paper style={Styles.Places.placesStyle} id="placeTwo" zDepth={3} rounded={false}>
+						<div style={Styles.Places.titleStyle}><h3>Зал</h3></div>
 					</Paper>
-					<Paper style={Styles.placesStyle} id="placeThree" zDepth={3} rounded={false}>
-						<div style={Styles.titleStyle}><h3>Ресторан</h3></div>
+					<Paper style={Styles.Places.placesStyle} id="placeThree" zDepth={3} rounded={false}>
+						<div style={Styles.Places.titleStyle}><h3>Ресторан</h3></div>
 					</Paper>
-					<Paper style={Styles.placesStyle} id="placeFour" zDepth={3} rounded={false}>
-						<div style={Styles.titleStyle}><h3>Студия</h3></div>
+					<Paper style={Styles.Places.placesStyle} id="placeFour" zDepth={3} rounded={false}>
+						<div style={Styles.Places.titleStyle}><h3>Студия</h3></div>
 					</Paper>
 				</div>
 		);

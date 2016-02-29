@@ -14,7 +14,7 @@ export default class Events extends React.Component {
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
         }}>
-          <div style={Styles.sliderFooter}>
+          <div style={Styles.Events.sliderFooter}>
             <h2 style={{marginBottom: 5}}>{slide.title}</h2>
             <p>{slide.text}</p>
           </div>
@@ -30,8 +30,8 @@ export default class Events extends React.Component {
       autoplay: true,
       dotClass: "dotClass",
       fade: true,
-      autoplaySpeed: 6000
-
+      autoplaySpeed: 6000,
+			draggable: false
     };
     return (
 	      <Slider {...settings}>

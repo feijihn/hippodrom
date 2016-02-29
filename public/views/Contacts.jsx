@@ -107,12 +107,12 @@ export default class Contacts extends React.Component {
                 />
               );
             })}
-						<div style={Styles.ContactsInfoWrapper}>
-							<p style={Styles.ContactsInfo}>
+						<div style={Styles.Contacts.infoWrapper}>
+							<p style={Styles.Contacts.info}>
 							#ИППОДРОМ<br/>
-							Begovaya alleya, 22, корп. 1,<br/>
-						 	Moscow, 125284<br/>
-							Russia<br/>
+							Беговая аллея, 22, корп. 1,<br/>
+						 	Москва, 125284<br/>
+							Россия<br/>
 							+7 495 123-04-20
 							</p>
 						</div>
