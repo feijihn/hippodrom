@@ -4,7 +4,8 @@
   "description": "hippodrom main site",
   "main": "public/index.jsx",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+		"dev": "webpack -w & node server.js > server.log &"
   },
   "repository": {
     "type": "git",

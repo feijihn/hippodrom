@@ -7,8 +7,11 @@ import Colors from 'material-ui/lib/styles/colors';
 
 
 export default class Places extends React.Component {
-	getInitialState = () => {
-		onHover: false
+	constructor(props) {
+		super(props);
+		this.state = {
+			onHover: false,
+		};
 	};
 	handleMouseEnter = () => {
 		this.setState({
@@ -23,6 +26,7 @@ export default class Places extends React.Component {
 	render () {
 		return (
 			<div>
+				{this.state.onHover?
 				<Paper style={{
 				width: '50%',
 				height: '35vh',
@@ -36,6 +40,8 @@ export default class Places extends React.Component {
 					<div style={Styles.Places.title}><h3>Бар</h3></div>
 					
 				</Paper>
+				:null}
+
 				<Paper style={{
 				width: '50%',
 				height: '35vh',
