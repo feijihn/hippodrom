@@ -3,33 +3,34 @@ import Header from './Header.jsx';
 import MenuBar from './MenuBar.jsx';
 import Content from './Content.jsx';
 import Footer from './Footer.jsx';
+import Order from './Order.jsx';
 import injectTapEventPlugin from 'react-tap-event-plugin';
+import Styles from '../styles/InlineStyles.js';
 
-//Neccessary for material-ui to work fine until React 1.0.0 will be released
-injectTapEventPlugin();
+injectTapEventPlugin(); //something weirdo
+
 
 export default class Main extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-		content: 'Home',
+			value: 'Home',
 		};
-	}
-
-	tabChanged = (value) =>  {
-		this.setState({
-			content: value,
-		});
 	};
 
+	handleChange = (value) => {
+		this.setState({
+			value: value,
+		});
+	};
 	render() {
 		return (
-		<div>
+			<div>  
 			<Header />
-			<MenuBar updateContent={this.tabChanged} defaultValue={'Home'} />
-			<Content value={this.state.content} />
-			<Footer />
-		</div>
-		);
+			<Order />
+			<MenuBar updateContent={this.handleChange} defaultValue={'Home'}/>
+			<Content value={this.state.value}/>
+			</div>
+		)
 	}
 }

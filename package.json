@@ -4,7 +4,8 @@
   "description": "hippodrom main site",
   "main": "public/index.jsx",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+		"dev": "webpack -w & node server.js > server.log &"
   },
   "repository": {
     "type": "git",
@@ -32,6 +33,7 @@
     "mocha": "^2.4.5",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
+    "react-google-maps": "^4.9.1",
     "react-slick": "^0.10.0",
     "react-tap-event-plugin": "^0.2.2",
     "webpack": "^1.12.14"
