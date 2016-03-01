@@ -16,14 +16,18 @@ export default class Header extends React.Component {
 	render() {
 		return(
 			<AppBar 
-			style={Styles.Header.appBarStyle}
+			style={Styles.Header.container}
 			showMenuIconButton={false}> 
-			<RaisedButton style={Styles.Header.logoStyle}><h2 id="logo">#ИППОДРОМ</h2></RaisedButton>
+			<RaisedButton style={Styles.Header.Logo.container}>
+				<h2 id="logo">
+				#ИППОДРОМ
+				</h2>
+			</RaisedButton>
 			<div style={style}>
-			<RaisedButton style={Styles.Header.iconsDivStyle}>
-				<img src="../images/icons/vk.png" style={Styles.Header.iconsStyle} />
-				<img src="../images/icons/youtube.png" style={Styles.Header.iconsStyle} />
-				<img src="../images/icons/instagram.png" style={Styles.Header.iconsStyle} />
+			<RaisedButton style={Styles.Header.Social.container}>
+				<img src="../images/icons/vk.png" style={Styles.Header.Social.icons} />
+				<img src="../images/icons/youtube.png" style={Styles.Header.Social.icons} />
+				<img src="../images/icons/instagram.png" style={Styles.Header.Social.icons} />
 				</RaisedButton>
 			</div>
 			</AppBar>

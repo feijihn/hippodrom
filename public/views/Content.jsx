@@ -1,10 +1,11 @@
 import React from 'react';
+
 import Home from './Home.jsx';
 import News from './News.jsx';
 import Places from './Places.jsx';
 import Gallery from './Gallery.jsx';
 import Contacts from './Contacts.jsx';
-import Calendar from './Calendar.jsx'
+
 import Paper from 'material-ui/lib/paper';
 import Styles from '../styles/InlineStyles.js';
 
@@ -22,13 +23,6 @@ export default class Content extends React.Component {
 				return (
 					<Paper style={Styles.Body.contentWrapper}>
 					<News />
-					</Paper>
-				);
-				break;
-			case 'Calendar':
-				return(
-					<Paper style={Styles.Body.contentWrapper}>
-					<Calendar />
 					</Paper>
 				);
 				break;

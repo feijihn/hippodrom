@@ -6,62 +6,54 @@ function squarify(element) {
 };
 
 var styles = {
-	Calendar: {
-		
-	},
 
-	Events: {
-		sliderFooter: {
-			width: '67vw',
-			height: 70,
-			position: 'absolute',
-			bottom: 0,
-			backgroundColor: 'rgba(0,0,0,0.7)',
-			color: 'white',
-			padding: 20
-		},
-	},
-	
 	Header: {
-		menuStyle: {
-			backgroundColor: Colors.brown500,
-		},
-		menuElementStyle: {
-			height: '10vh',
-			color: 'black',
-		},
-		menuInkBarStyle: {
-			backgroundColor: Colors.brown900,
-			color:'rgba(255, 255, 255, 0)'
-		},
-		appBarStyle: {
+		container: {
 			height: '20vh',
 			width: '100%',
 			textAlign: 'center',
 			backgroundColor: Colors.brown200,
 			zIndex: -1
 		},
-		logoStyle: {
-			margin: 6,
-			marginTop: 12, 
-			padding: 2, 
-			height: 36
+
+		Menu: {
+			container: {
+				width:'70%',
+				position: 'absolute',
+				top: '10vh',
+				left: '15%'
+			},
+			color: {
+				backgroundColor: Colors.brown500,
+			},
+			buttonContainer: {
+				height: '10vh',
+			},
+			inkBarColor: {
+				backgroundColor: Colors.brown900,
+			},
 		},
-		iconsDivStyle: {
-			margin: 6,
-			marginTop: 12,  
-			height: 36,
+
+		Logo: {
+			container: {
+				margin: 6,
+				marginTop: 12, 
+				padding: 2, 
+				height: 36
+			},
 		},
-		iconsStyle: {
-			margin: 6,
-			marginTop: 2,
-			opacity: 0.5
-		},
-		menuWrapper: {
-			width:'70%',
-			position: 'absolute',
-			top: '10vh',
-			left: '15%'
+
+		Social: {
+			container: {
+				margin: 6,
+				marginTop: 12,  
+				height: 36,
+			},
+			icons: {
+				margin: 6,
+				marginTop: 2,
+				opacity: 0.5
+			},
 		},
 	},
 
@@ -75,6 +67,19 @@ var styles = {
 			backgroundColor: Colors.brown100
 		},
 	},
+
+	Events: {
+		sliderFooter: {
+			width: '67vw',
+			height: 70,
+			position: 'absolute',
+			bottom: 0,
+			backgroundColor: 'rgba(0,0,0,0.7)',
+			color: 'white',
+			padding: 20
+		},
+	},
+
 
 	Places: {
 		  placesStyle: {
@@ -94,7 +99,7 @@ var styles = {
 	},
 
 	Order: {
-		orderButton: {
+		button: {
 			top: '30%',
 			opacity: 0.8,
 			position: 'fixed'
@@ -102,7 +107,7 @@ var styles = {
 	},
 
 	Contacts: {
-		infoWrapper: {
+		textWrapper: {
 			width: '25%',
 			backgroundColor: 'rgba(0,0,0,0.85)',
 			height: 'auto',
@@ -111,7 +116,7 @@ var styles = {
 			marginLeft: '75%',
 			padding: '10px'
 		},
-		info: {
+		text: {
 			color: Colors.white,
 			fontWeight: 200	
 		}
@@ -134,31 +139,18 @@ var styles = {
 		zIndex: -2
 	},
 
-
-
-	buttonsStyle: {
-		backgroundColor: Colors.brown500,
+	Footer: {
+		container: {
+			width: '100%' ,
+			height: '8vh' ,
+			backgroundColor: Colors.grey50,
+			borderTop: '1px solid',
+			position: 'absolute',
+			bottom: 0,
+			opacity: 0.5,
+			zIndex: -2,
+		}
 	},
-	//newsBlockStyle: {
-		
-	//},
-
-	buttonsStyle: {
-    backgroundColor: Colors.brown500,
-  },
-
-
-	FooterStyle: {
-		width: '100%' ,
-		height: '8vh' ,
-		backgroundColor: Colors.grey50,
-		borderTop: '1px solid',
-		position: 'absolute',
-		bottom: 0,
-		opacity: 0.5,
-		zIndex: -2,
-	},
-
 }
 
 
