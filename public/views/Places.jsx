@@ -7,25 +7,71 @@ import Colors from 'material-ui/lib/styles/colors';
 
 
 export default class Places extends React.Component {
-	render() {
-		//var news = this.props.data.map((el) => {
-			//return <NewsElement data={el.data} key={Date.now()} />
-		//});
+	getInitialState = () => {
+		onHover: false
+	};
+	handleMouseEnter = () => {
+		onHover: true
+	};
+	handleMouseLeave = () => {
+		onHover: false
+	};
+	render () {
 		return (
-				<div id="contentWrapper">
-					<Paper style={Styles.Places.placesStyle} id="placeOne" zDepth={3} rounded={false}>
-						<div style={Styles.Places.titleStyle}><h3>Бар</h3></div>
-					</Paper>
-					<Paper style={Styles.Places.placesStyle} id="placeTwo" zDepth={3} rounded={false}>
-						<div style={Styles.Places.titleStyle}><h3>Зал</h3></div>
-					</Paper>
-					<Paper style={Styles.Places.placesStyle} id="placeThree" zDepth={3} rounded={false}>
-						<div style={Styles.Places.titleStyle}><h3>Ресторан</h3></div>
-					</Paper>
-					<Paper style={Styles.Places.placesStyle} id="placeFour" zDepth={3} rounded={false}>
-						<div style={Styles.Places.titleStyle}><h3>Студия</h3></div>
-					</Paper>
-				</div>
+			<div>
+				<Paper style={{
+				width: '50%',
+				height: '35vh',
+				display: 'inline-block',
+				backgroundImage: 'url(../images/thumbone.jpg)', }} 
+				zDepth={3} 
+				rounded={false}
+				onMouseEnter={this.handleMouseEnter}
+				onMouseLeave={this.handleMouseLeave}>
+
+					<div style={Styles.Places.title}><h3>Бар</h3></div>
+
+				</Paper>
+				<Paper style={{
+				width: '50%',
+				height: '35vh',
+				display: 'inline-block',
+				backgroundImage: 'url(../images/thumbtwo.jpg)', }} 
+				zDepth={3} 
+				rounded={false}
+				onMouseEnter={this.handleMouseEnter}
+				onMouseLeave={this.handleMouseLeave}>
+
+					<div style={Styles.Places.title}><h3>Зал</h3></div>
+
+				</Paper>
+				<Paper style={{
+				width: '50%',
+				height: '35vh',
+				display: 'inline-block',
+				backgroundImage: 'url(../images/thumbthree.jpg)', }} 
+				zDepth={3} 
+				rounded={false}
+				onMouseEnter={this.handleMouseEnter}
+				onMouseLeave={this.handleMouseLeave}>
+
+					<div style={Styles.Places.title}><h3>Ресторан</h3></div>
+
+				</Paper>
+				<Paper style={{
+				width: '50%',
+				height: '35vh',
+				display: 'inline-block',
+				backgroundImage: 'url(../images/thumbfour.jpg)', }} 
+				zDepth={3} 
+				rounded={false}
+				onMouseEnter={this.handleMouseEnter}
+				onMouseLeave={this.handleMouseLeave}>
+
+					<div style={Styles.Places.title}><h3>Студия</h3></div>
+
+				</Paper>
+			</div>
 		);
 	}
 }

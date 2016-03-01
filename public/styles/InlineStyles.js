@@ -82,20 +82,22 @@ var styles = {
 
 
 	Places: {
-		  placesStyle: {
-			  width: '50%',
-			  height: 296,
-			  padding: '125px',
-			  textAlign: 'center',
-			  display: 'inline-block',
-			  backgroundImage: 'url(../images/thumbone.jpg)',
-		  },
-		  titleStyle: {
-		  	backgroundColor: Colors.brown500,
-		     display: 'inline-block',
-		     padding: '10px',
-		     opacity: 0.9
-		  },
+		container: {
+			width: '50%',
+			height: '35vh',
+			display: 'inline-block',
+			backgroundImage: 'url(../images/thumbone.jpg)',
+		},
+		title: {
+			width: '100%',
+			height: '35vh',
+			lineHeight: '35vh',
+			backgroundColor: 'rgba(0,0,0,0.6)',
+			display: 'inline-block',
+			color: 'white',
+			textAlign: 'center',
+			fontSize: 30
+		},
 	},
 
 	Order: {
