@@ -26,7 +26,6 @@ export default class Places extends React.Component {
 	render () {
 		return (
 			<div>
-				{this.state.onHover?
 				<Paper style={{
 				width: '50%',
 				height: '35vh',
@@ -37,10 +36,9 @@ export default class Places extends React.Component {
 				onMouseEnter={this.handleMouseEnter}
 				onMouseLeave={this.handleMouseLeave}>
 
-					<div style={Styles.Places.title}><h3>Бар</h3></div>
+					<div style={this.state.onHover ? Styles.Places.titleOnHover : Styles.Places.title}><h3>Бар</h3></div>
 					
 				</Paper>
-				:null}
 
 				<Paper style={{
 				width: '50%',
@@ -52,7 +50,7 @@ export default class Places extends React.Component {
 				onMouseEnter={this.handleMouseEnter}
 				onMouseLeave={this.handleMouseLeave}>
 
-					<div style={Styles.Places.title}><h3>Зал</h3></div>
+					<div style={this.state.onHover ? Styles.Places.titleOnHover : Styles.Places.title}><h3>Зал</h3></div>
 
 				</Paper>
 				<Paper style={{
@@ -65,7 +63,7 @@ export default class Places extends React.Component {
 				onMouseEnter={this.handleMouseEnter}
 				onMouseLeave={this.handleMouseLeave}>
 
-					<div style={Styles.Places.title}><h3>Ресторан</h3></div>
+					<div style={this.state.onHover ? Styles.Places.titleOnHover : Styles.Places.title}><h3>Ресторан</h3></div>
 
 				</Paper>
 				<Paper style={{
@@ -78,7 +76,7 @@ export default class Places extends React.Component {
 				onMouseEnter={this.handleMouseEnter}
 				onMouseLeave={this.handleMouseLeave}>
 
-					<div style={Styles.Places.title}><h3>Студия</h3></div>
+					<div style={this.state.onHover ? Styles.Places.titleOnHover : Styles.Places.title}><h3>Студия</h3></div>
 
 				</Paper>
 			</div>

@@ -98,6 +98,15 @@ var styles = {
 			textAlign: 'center',
 			fontSize: 30
 		},
+		titleOnHover: {
+			width: '100%',
+			height: '35vh',
+			lineHeight: '35vh',
+			display: 'inline-block',
+			color: 'rgba(0,0,0,0.2)',
+			textAlign: 'center',
+			fontSize: 30
+		},
 	},
 
 	Order: {
