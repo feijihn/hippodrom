@@ -11,10 +11,14 @@ export default class Places extends React.Component {
 		onHover: false
 	};
 	handleMouseEnter = () => {
-		onHover: true
+		this.setState({
+			onHover: true
+		});
 	};
 	handleMouseLeave = () => {
-		onHover: false
+		this.setState({
+			onHover: false
+		});
 	};
 	render () {
 		return (
@@ -30,7 +34,7 @@ export default class Places extends React.Component {
 				onMouseLeave={this.handleMouseLeave}>
 
 					<div style={Styles.Places.title}><h3>Бар</h3></div>
-
+					
 				</Paper>
 				<Paper style={{
 				width: '50%',
