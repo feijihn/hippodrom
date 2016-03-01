@@ -7,34 +7,27 @@ import Order from './Order.jsx';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import Styles from '../styles/InlineStyles.js';
 
-import AppBar from 'material-ui/lib/app-bar';
-import Colors from 'material-ui/lib/styles/colors'
-import Paper from 'material-ui/lib/paper';
-import Tabs from 'material-ui/lib/tabs/tabs';
-import Tab from 'material-ui/lib/tabs/tab';
+injectTapEventPlugin(); //something weirdo
 
-import RaisedButton from 'material-ui/lib/raised-button';
-
-injectTapEventPlugin();
 
 export default class Main extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      value: 'Home',
-    };
-  };
+	constructor(props) {
+		super(props);
+		this.state = {
+			value: 'Home',
+		};
+	};
 
-  handleChange = (value) => {
-    this.setState({
-      value: value,
-    });
-  };
+	handleChange = (value) => {
+		this.setState({
+			value: value,
+		});
+	};
 	render() {
 		return (
 			<div>  
 			<Header />
-      <Order />
+			<Order />
 			<MenuBar updateContent={this.handleChange} defaultValue={'Home'}/>
 			<Content value={this.state.value}/>
 			</div>

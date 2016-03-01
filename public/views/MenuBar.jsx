@@ -30,7 +30,6 @@ export default class MenuBar extends React.Component {
 			>
 				<Tab style={Styles.Header.Menu.buttonContainer} label="События" value="Home" ></Tab>
 				<Tab style={Styles.Header.Menu.buttonContainer} label="Новости" value="News"></Tab>
-				<Tab style={Styles.Header.Menu.buttonContainer} label="Календарь" value="Calendar" ></Tab>
 				<Tab style={Styles.Header.Menu.buttonContainer} label="Места" value="Places" ></Tab>
 				<Tab style={Styles.Header.Menu.buttonContainer} label="Медиа" value="Gallery" ></Tab>
 				<Tab style={Styles.Header.Menu.buttonContainer} label="Контакты" value="Contacts" ></Tab>
