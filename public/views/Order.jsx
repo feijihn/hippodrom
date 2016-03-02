@@ -11,20 +11,6 @@ import Divider from 'material-ui/lib/divider';
 import TextField from 'material-ui/lib/text-field';
 import Snackbar from 'material-ui/lib/snackbar';
 
-export default class UnOrder extends React.Component {
-	render() {
-		return (
-			<div>
-				<RaisedButton 
-					label="Отменить заказ" 
-					backgroundColor={Colors.red500} 
-					style={Styles.Order.button}  
-					secondary={true} 
-				/>
-			</div>
-		);
-	}
-};
 
 export default class Order extends React.Component {
 
@@ -70,6 +56,16 @@ export default class Order extends React.Component {
 	};
 
 	render() {
+
+		const unOrderButton = 
+			<RaisedButton 
+				label="Отменить заказ" 
+				backgroundColor={Colors.red500} 
+				style={Styles.Order.button}  
+				onTouchTap={this.handleUnOrder} 
+				secondary={true} 
+			/>;
+
 		const actions = [
 			<FlatButton
 				label="Отмена"
@@ -82,21 +78,9 @@ export default class Order extends React.Component {
 				keyboardFocused={true}
 				onTouchTap={this.handleOrder} 
 			/>,
-
 		];
 
-		return (
-			<div>
-
-			{this.state.ordered ? 
-				<RaisedButton 
-					label="Отменить заказ" 
-					backgroundColor={Colors.red500} 
-					style={Styles.Order.button}  
-					onTouchTap={this.handleUnOrder} 
-					secondary={true} 
-				/>
-			: 
+		const orderButton = 
 			<div>
 				<RaisedButton 
 					label="Заказ стола" 
@@ -108,17 +92,17 @@ export default class Order extends React.Component {
 				<Snackbar
 					open={this.state.orderedNotification}
 					message="Заказ отменен"
-					autoHideDuration={3000}
+					autoHideDuration={2500}
 					onRequestClose={this.handleRequestClose}
 				/>
-					<Dialog
-						title="Заказ стола"
-						actions={actions}
-						modal={false}
-						open={this.state.open}
-						onRequestClose={this.handleClose}
-						contentStyle = {{width:500}} 
-					>
+				<Dialog
+					title="Заказ стола"
+					actions={actions}
+					modal={false}
+					open={this.state.open}
+					onRequestClose={this.handleClose}
+					contentStyle = {{width:500}} 
+				>
 						<p>Вы можете позвонить по нашему номеру <b>89273275290</b> или воспользоваться представленной ниже формой</p>
 						<br/>
 						<TextField
@@ -132,10 +116,12 @@ export default class Order extends React.Component {
 							hintText="Нажмите, чтобы выбрать дату" 
 							mode="landscape" 
 						/>	
-					</Dialog>
-				</div>
-			}
+				</Dialog>
+			</div>;
 
+		return (
+			<div>
+			{this.state.ordered ? unOrderButton : orderButton }
 			</div>
 		);
 	}

@@ -2,6 +2,7 @@ import React from 'react';
 import Content from './Content.jsx';
 import {GoogleMapLoader, GoogleMap, Marker} from "react-google-maps";
 import Styles from '../styles/InlineStyles.js';
+import Footer from './Footer.jsx';
 import { default as canUseDOM } from "can-use-dom";
 import { default as _ } from "lodash";
 
@@ -83,42 +84,42 @@ export default class Contacts extends React.Component {
 
 	render() {
 		return (
-			<GoogleMapLoader
-				containerElement={
-					<div
-						{...this.props}
-						style={{
-							height: `100%`,
-						}}
-					/>
-				}
-				googleMapElement={
-					<GoogleMap
-						ref={(map) => (this._googleMapComponent = map) && console.log(map.getZoom())}
-						defaultZoom={14}
-						defaultCenter={{ lat: 55.7791206, lng:37.5594266}}
-						onClick={::this.handleMapClick}
-					>
-						{this.state.markers.map((marker, index) => {
-							return (
-								<Marker
-									{...marker}
-									onRightclick={this.handleMarkerRightclick.bind(this, index)}
-								/>
-							);
-						})}
-						<div style={Styles.Contacts.textWrapper}>
-							<p style={Styles.Contacts.text}>
-							#ИППОДРОМ<br/>
-							Беговая аллея, 22, корп. 1,<br/>
-							Москва, 125284<br/>
-							Россия<br/>
-							+7 495 123-04-20
-							</p>
-						</div>
-					</GoogleMap>
-				}
-			/>
+				<GoogleMapLoader
+					containerElement={
+						<div
+							{...this.props}
+							style={{height: `100%`}}
+						/>
+					}
+					googleMapElement = {
+						<GoogleMap
+							ref={(map) => (this._googleMapComponent = map) && console.log(map.getZoom())}
+							defaultZoom={14}
+							defaultCenter={{ lat: 55.7791206, lng:37.5594266}}
+							onClick={::this.handleMapClick}
+						>
+							{this.state.markers.map((marker, index) => {
+								return (
+									<Marker
+										{...marker}
+										onRightclick={this.handleMarkerRightclick.bind(this, index)}
+									/>
+								);
+							})}
+							<div style={Styles.Contacts.textWrapper}>
+								<p style={Styles.Contacts.text}>
+								#ИППОДРОМ<br/>
+								Беговая аллея, 22, корп. 1,<br/>
+								Москва, 125284<br/>
+								Россия<br/>
+								+7 495 123-04-20
+								</p>
+							</div>
+						</GoogleMap>
+					}
+
+				/>
+
 		);
 	}
 }

@@ -70,7 +70,7 @@ var styles = {
 
 	Events: {
 		sliderFooter: {
-			width: '67vw',
+			width: '70vw',
 			height: 70,
 			position: 'absolute',
 			bottom: 0,
@@ -141,15 +141,6 @@ var styles = {
 		marginLeft: '10%'
 	},
 
-	backgroundStyle: {
-		height: '100%',
-		width: '100%',
-		backgroundColor: Colors.lightBlue50,
-		position: 'absolute',
-		backgroundRepeat: '',
-		zIndex: -2
-	},
-
 	Footer: {
 		container: {
 			width: '100%' ,
@@ -159,7 +150,6 @@ var styles = {
 			position: 'absolute',
 			bottom: 0,
 			opacity: 0.5,
-			zIndex: -2,
 		}
 	},
 }

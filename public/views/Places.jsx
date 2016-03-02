@@ -24,8 +24,23 @@ export default class Places extends React.Component {
 		});
 	};
 	render () {
+		var placesElements = this.props.data.map (function (element, id){
+			return (
+				<Paper style={{
+					width: '50%',
+					height: '35vh',
+					display: 'inline-block',
+					backgroundImage: 'url(' + element.img + ')', }} 
+					zDepth={3} 
+					rounded={false}
+				>
+					<div style={Styles.Places.title}><h3>{element.title}</h3></div>
+				</Paper>
+			);
+		});
 		return (
 			<div>
+				{placesElements}
 				<Paper style={{
 				width: '50%',
 				height: '35vh',

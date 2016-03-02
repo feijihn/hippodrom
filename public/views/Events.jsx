@@ -5,7 +5,7 @@ import Styles from '../styles/InlineStyles.js';
 
 export default class Events extends React.Component {
 	render() {
-		var slideElements = this.props.data.EventsData.map(function(slide, id) {
+		var slideElements = this.props.data.map(function(slide, id) {
 //gotta move container style to InlineStyles.js but i dunno how cuz of background image u kno~ what i mean dawg?
 			return (
 				<div style={{

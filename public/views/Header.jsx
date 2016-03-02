@@ -25,9 +25,9 @@ export default class Header extends React.Component {
 			</RaisedButton>
 			<div style={style}>
 			<RaisedButton style={Styles.Header.Social.container}>
-				<img src="../images/icons/vk.png" style={Styles.Header.Social.icons} />
-				<img src="../images/icons/youtube.png" style={Styles.Header.Social.icons} />
-				<img src="../images/icons/instagram.png" style={Styles.Header.Social.icons} />
+				<a href="#"> <img src="../images/icons/vk.png" style={Styles.Header.Social.icons} /> </a>
+				<a href="#"> <img src="../images/icons/youtube.png" style={Styles.Header.Social.icons} /> </a>
+				<a href="vk.com"> <img src="../images/icons/instagram.png" style={Styles.Header.Social.icons} /> </a>
 				</RaisedButton>
 			</div>
 			</AppBar>
